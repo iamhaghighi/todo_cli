@@ -34,10 +34,10 @@ func (m State) View() string {
 			checked,
 			" ",
 			lipgloss.PlaceHorizontal(50, lipgloss.Left, itemStyle.Render(todo.Title)),
-			"created_at: ",
-			todo.CreatedAt.Format("15:04:05"),
-			" updated_at: ",
-			todo.UpdatedAt.Format("15:04:05"),
+			// "created_at: ",
+			// todo.CreatedAt.Format("15:04:05"),
+			// " updated_at: ",
+			// todo.UpdatedAt.Format("15:04:05"),
 		)
 
 		s += line + "\n"
