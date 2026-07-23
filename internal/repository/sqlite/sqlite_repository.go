@@ -51,8 +51,8 @@ func (r *Repository) GetAll(ctx context.Context) ([]domain.Todo, error) {
 			created_at,
 			updated_at
 		FROM todos
-		ORDER BY created_at DESC
 	`)
+	// ORDER BY created_at DESC
 	if err != nil {
 		return nil, err
 	}
